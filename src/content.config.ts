@@ -47,4 +47,4 @@ const note = defineCollection({
 	}),
 });
 
-export const collections = { learn, note };
+export const collections = { post, note };
