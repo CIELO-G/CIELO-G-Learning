@@ -23,8 +23,7 @@ import rehypeUnwrapImages from "rehype-unwrap-images";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://cielo-g.github.io/CIELO-G-Learning",
-	base: "/CIELO-G-Learning", // 👈 Required for GitHub Pages
+	ite: "https://cielo-g.github.io",
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		icon(),
