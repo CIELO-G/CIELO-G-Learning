@@ -6,18 +6,18 @@ import { menuLinks } from "@/site.config";
 
 <header class="group relative mb-28 flex items-center sm:ps-18" id="main-header">
 	<div class="flex sm:flex-col">
-	<a
-		aria-current={Astro.url.pathname === "/" ? "page" : false}
-		class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
-		href="/"
+		<a
+			aria-current={Astro.url.pathname === "/" ? "page" : false}
+			class="inline-flex items-center gap-4 grayscale hover:filter-none sm:relative sm:inline-block"
+			href="/"
 		>
-		<img
-			src="/icon.svg"
-			alt="CIELO-G Logo"
-			class="me-4 h-20 w-12 sm:absolute sm:-start-18 sm:me-0 sm:h-40 sm:w-24"
-		/>
-		<span class="text-xl font-bold sm:text-2xl">CIELO-G</span>
-		</a>
+			<img
+				src="/icon.svg"
+				alt="CIELO-G Logo"
+				class="h-20 w-auto sm:h-40"
+			/>
+			<span class="text-3xl font-bold sm:text-4xl">CIELO-G</span>
+			</a>
 		<nav
 			aria-label="Main menu"
 			class="bg-global-bg/85 text-accent sm:divide-accent absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md py-4 shadow backdrop-blur-sm group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
