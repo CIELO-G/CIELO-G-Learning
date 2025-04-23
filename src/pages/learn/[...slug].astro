@@ -1,24 +1,29 @@
 ---
 import { render } from "astro:content";
-import { getAllPosts } from "@/data/post";
-import PostLayout from "@/layouts/BlogPost.astro";
+import { getAllLearn } from "@/data/learn";           // ← new helper
+import PostLayout from "@/layouts/BlogPost.astro"; 
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 
-// if you're using an adaptor in SSR mode, getStaticPaths wont work -> https://docs.astro.build/en/guides/routing/#modifying-the-slug-example-for-ssr
+/**
+ * Build-time path generation
+ * ──────────────────────────
+ * Returns one page for every entry in the learn collection.
+ */
 export const getStaticPaths = (async () => {
-	const blogEntries = await getAllPosts();
-	return blogEntries.map((post) => ({
-		params: { slug: post.id },
-		props: { post },
-	}));
+  const learnEntries = await getAllLearn();
+
+  return learnEntries.map((entry) => ({
+    params: { slug: entry.id },   // each file becomes /learn/<slug>/
+    props: { entry },             // pass the entry as a prop
+  }));
 }) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
-const { post } = Astro.props;
-const { Content } = await render(post);
+const { entry } = Astro.props;          // destructure the prop
+const { Content } = await render(entry); // MDX/MD → HTML
 ---
 
-<PostLayout post={post}>
-	<Content />
+<PostLayout post={entry}>
+  <Content />
 </PostLayout>
