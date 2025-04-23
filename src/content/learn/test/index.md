@@ -1,9 +1,9 @@
 ---
-title: "Godot [2]: Learning Godot - Tutorial"
+title: "Layers of the Earth"
 description: "A beginner-friendly introduction to using the Godot game engine, following Brackeys' tutorial."
-publishDate: "8 Feb 2025"
+publishDate: "23 Apr 2025"
 topic: "Game Dev"
-tags: ["project-g", "gamedev", "godot"]
+tags: ["Earth", "Geology"]
 coverImage:
   src: "./logo.png"
   alt: "Godot Intro Logo"
@@ -13,6 +13,8 @@ ogImage: "./logo.png"
 ## Learning Godot: Why This Video?
 
 Starting game development can be overwhelming, but thanks to great resources like **Brackeys' "How to Make a Video Game - Godot Beginner Tutorial"**, you don’t have to start from scratch. Instead of creating our own tutorial, we believe this video is an **excellent introduction** to Godot. It covers the **fundamentals of game creation**, and it’s the perfect **first step** before diving into more complex topics.
+
+<iframe src='https://my.spline.design/cieloglayersoftheearthfinalcopy-6qEalcR0dv3ripMhJTOYxuFD/' frameborder='0' width='100%' height='100%'></iframe>
 
 :::note
 We will be adding our **our own guides**, called **"Recipes",** soon. In the meantime, this video provides **everything you need** to get started. Below the video, you will find a **glossary of key concepts** for easy reference.
