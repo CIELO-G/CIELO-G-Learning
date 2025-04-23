@@ -23,10 +23,8 @@ import rehypeUnwrapImages from "rehype-unwrap-images";
 
 // https://astro.build/config
 export default defineConfig({
-	site: siteConfig.url,
-	image: {
-		domains: ["artecs.org"],
-	},
+	site: "https://cielo-g.github.io/CIELO-G-Learning",
+	base: "/CIELO-G-Learning", // 👈 Required for GitHub Pages
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		icon(),
