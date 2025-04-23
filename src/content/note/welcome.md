@@ -1,8 +1,8 @@
 ---
-title: Welcome to Our Website!
-description: Stay updated with weekly announcements and exciting events
-publishDate: "2025-02-06T15:00:00Z"
+title: Welcome to our Website!
+description: Stay updated with announcements and exciting events
+publishDate: "2025-04-23T14:19:00Z"
 ---
 
-Hi, Hello!
-This is where we’ll be posting announcements for our weekly meetings and sharing exciting updates. Stay tuned for the latest news and happenings!
+What is this? These are our notes!
+This is where we will post announcements and share exciting updates. Stay tuned for the latest news and happenings!
