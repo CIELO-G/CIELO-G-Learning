@@ -10,7 +10,7 @@ const baseSchema = z.object({
 });
 
 const post = defineCollection({
-	loader: glob({ base: "./src/content/post", pattern: "**/*.{md,mdx}" }),
+	loader: glob({ base: "./src/content/learn", pattern: "**/*.{md,mdx}" }),
 	schema: ({ image }) =>
 		baseSchema.extend({
 			description: z.string(),
@@ -47,4 +47,4 @@ const note = defineCollection({
 	}),
 });
 
-export const collections = { post, note };
+export const collections = { learn, note };
