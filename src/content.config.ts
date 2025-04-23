@@ -31,6 +31,8 @@ const post = defineCollection({
 				.string()
 				.optional()
 				.transform((str) => (str ? new Date(str) : undefined)),
+
+			topic: z.string().optional(),
 		}),
 });
 
