@@ -73,7 +73,7 @@ const sortedTopicKeys = Object.keys(groupedByTopic).sort();
           <li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
             <time
               class="font-mono text-sm tabular-nums text-slate-600 dark:text-slate-400"
-              datetime={p.data.publishDate.toISOString()}
+              datetime={p.data.publishDate}
             >
               {new Date(p.data.publishDate).toLocaleDateString("en-GB", {
                 day: "numeric",
