@@ -2,7 +2,7 @@
 title: "Layers of the Earth"
 description: "A beginner-friendly introduction to using the Godot game engine, following Brackeys' tutorial."
 publishDate: "23 Apr 2025"
-topic: "Game Dev"
+topic: "Geology 1301 Learning"
 tags: ["Earth", "Geology"]
 coverImage:
   src: "./logo.png"
