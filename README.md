@@ -1,11 +1,11 @@
 <div align="center">
-  <img alt="Artecs logo" src="https://github.com/chrismwilliams/astro-theme-cactus/assets/12715988/85aa0d3c-ef6a-44e2-954d-ef035b4f4315" width="70" />
+  <img alt="Artecs logo" src="https://cielo-g.github.io/icon.svg" width="70" />
 </div>
 <h1 align="center">
-  Artecs Website
+  CIELO-G LEARNING WEBSITE
 </h1>
 
-Astro Cactus powers the ARTECS website, providing a clean and efficient foundation built with Astro. Designed for creativity and performance, our site serves as a hub for showcasing projects, sharing insights, and exploring the intersection of art and technology.
+The Astro framework powers the CIELO-G LEARNING website, providing a clean and efficient foundation. Designed for performance, our site is a hub for sharing learning resources and exploring the intersection of technology and Earth Sciences education.
 ## Website
 [https://www.artecs.org/](https://www.artecs.org/)
 
