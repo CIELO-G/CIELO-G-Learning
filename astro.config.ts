@@ -31,7 +31,6 @@ export default defineConfig({
 		mdx(),
 		robotsTxt(),
 		webmanifest({
-			// See: https://github.com/alextim/astro-lib/blob/main/packages/astro-webmanifest/README.md
 			name: siteConfig.title,
 			short_name: "CIELO-G", // optional
 			description: siteConfig.description,
