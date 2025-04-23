@@ -2,7 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import Pagination from "@/components/Paginator.astro";
 import PostPreview from "@/components/blog/PostPreview.astro";
-import { getAllPosts, getUniqueTags, groupPostsByYear } from "@/data/post";
+import { getAllPosts, getUniqueTags, groupPostsByTopic } from "@/data/post";
 import PageLayout from "@/layouts/Base.astro";
 import { collectionDateSort } from "@/utils/date";
 import type { GetStaticPaths, Page } from "astro";
@@ -46,8 +46,8 @@ const paginationProps = {
 	}),
 };
 
-const groupedByYear = groupPostsByYear(page.data);
-const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
+const groupedByTopic = groupPostsByTopic(page.data);
+const sortedTopicKeys = Object.keys(groupedByTopic).sort();
 ---
 
 <PageLayout meta={meta}>
@@ -60,23 +60,34 @@ const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
 	</div>
 	<div class="grid sm:grid-cols-[3fr_1fr] sm:gap-x-8 sm:gap-y-16">
 		<div>
-			{
-				descYearKeys.map((yearKey) => (
-					<section aria-labelledby={`year-${yearKey}`}>
-						<h2 id={`year-${yearKey}`} class="title text-lg">
-							<span class="sr-only">Posts in</span>
-							{yearKey}
-						</h2>
-						<ul class="mt-5 mb-16 space-y-4 text-start">
-							{groupedByYear[yearKey]?.map((p) => (
-								<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
-									<PostPreview post={p} />
-								</li>
-							))}
-						</ul>
-					</section>
-				))
-			}
+			{sortedTopicKeys.map((topicKey) => {
+  const posts = groupedByTopic[topicKey].sort((a, b) =>
+    new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
+  );
+
+  return (
+    <section aria-labelledby={`topic-${topicKey}`}>
+      <h2 id={`topic-${topicKey}`} class="title text-lg">{topicKey}</h2>
+      <ul class="mt-5 mb-16 space-y-4 text-start">
+        {posts.map((p) => (
+          <li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
+            <time
+              class="font-mono text-sm tabular-nums text-slate-600 dark:text-slate-400"
+              datetime={p.data.publishDate}
+            >
+              {new Date(p.data.publishDate).toLocaleDateString("en-GB", {
+                day: "numeric",
+                month: "short",
+                year: "numeric",
+              })}
+            </time>
+            <PostPreview post={p} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+})}
 			<Pagination {...paginationProps} />
 		</div>
 		{
