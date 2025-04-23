@@ -1,31 +1,22 @@
 ---
-title: "Layers of the Earth"
-description: "A beginner-friendly introduction to using the Godot game engine, following Brackeys' tutorial."
+title: "This is a testing page"
+description: "A page to test interactive functionalities for the website!"
 publishDate: "23 Apr 2025"
-topic: "Geology 1301 Learning"
-tags: ["Earth", "Geology"]
+topic: "Testing"
+tags: ["Test"]
 coverImage:
   src: "./logo.png"
-  alt: "Godot Intro Logo"
+  alt: "Logo"
 ogImage: "./logo.png"
 ---
 
-## Learning Godot: Why This Video?
+## This is a GIF animation embedding:
+![GIF](./animation.gif)
 
-Starting game development can be overwhelming, but thanks to great resources like **Brackeys' "How to Make a Video Game - Godot Beginner Tutorial"**, you don’t have to start from scratch. Instead of creating our own tutorial, we believe this video is an **excellent introduction** to Godot. It covers the **fundamentals of game creation**, and it’s the perfect **first step** before diving into more complex topics.
-
-<iframe src='https://my.spline.design/cieloglayersoftheearthfinalcopy-6qEalcR0dv3ripMhJTOYxuFD/' frameborder='0' width='100%' height="500"></iframe>
-
-:::note
-We will be adding our **our own guides**, called **"Recipes",** soon. In the meantime, this video provides **everything you need** to get started. Below the video, you will find a **glossary of key concepts** for easy reference.
-:::
-
-## Video Tutorial 🎥
-
-**How to make a Video Game - Godot Beginner Tutorial by Brackeys**
+## This is a YouTube video embedding:
 <iframe 
-    src="https://www.youtube.com/embed/LOhfqjmasi0" 
-    title="How to make a Video Game - Godot Beginner Tutorial" 
+    src="https://www.youtube.com/watch?v=obSH5F2DYvk" 
+    title="Unbelievable Nature" 
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen 
@@ -33,82 +24,296 @@ We will be adding our **our own guides**, called **"Recipes",** soon. In the mea
     height="315">
 </iframe>
 
+## This is a 3D Interactive embedding (using Spline):
+<iframe 
+    src="https://my.spline.design/cieloglayersoftheearthnoninteractivecopycopy-TZS1qrzJecqRAK9lMkqeSXPg/" 
+    width="100%" 
+    height="500" 
+    frameborder="0">
+</iframe>
+
+## This is a 2D Interactive embedding (using p5.js):
+<iframe 
+    src="https://editor.p5js.org/arthifact/full/uYnYvKU7r" 
+    width="100%" 
+    height="500" 
+    frameborder="0">
+</iframe>
+
+# The following content shows the possible writing formattings:
+
+# This is a H1 Heading
+
+## This is a H2 Heading
+
+### This is a H3 Heading
+
+#### This is a H4 Heading
+
+##### This is a H5 Heading
+
+###### This is a H6 Heading
+
+## Horizontal Rules
+
 ---
 
-## Godot Beginner Cheatsheet 📚
+---
 
-### Core Concepts
-- **Node** –> Basic building blocks of games (e.g., player, enemy, platforms).
-- **Scene** –> Reusable template composed of nodes.
-- **Scene Tree** –> Hierarchical structure of nodes (parent-child relationships).
+---
 
-### Delta Time
-- **`delta`** ⏳ –> Ensures consistent game speed regardless of frame rate:
- ```python title="file.gd"
-  position += speed * delta
-  ```
+## Emphasis
 
-✅ **With** Delta Time:
-![1](./1.gif)
+**This is bold text**
 
-❌ **Without** Delta Time:
-![2](./2.gif)
+_This is italic text_
 
-### Essential Nodes
-- **CharacterBody2D** –> Player or NPC with physics-based movement.
-- **StaticBody2D** –> Non-moving objects (ground, walls).
-- **Area2D** –> Detects overlapping objects, useful for pickups or kill zones.
-- **CollisionShape2D** –> Defines physical collision boundaries.
-- **RayCast2D** –> Detects collisions in a specific direction.
+~~Strikethrough~~
 
-### Graphics & Animation
-- **Sprite2D** –> Displays static images.
-- **AnimatedSprite2D** –> Handles frame-based animations.
-- **AnimationPlayer** –> Animates any property over time (position, scale, visibility).
+## Quotes
 
-### Scripting (GDScript)
-- **Built-in Functions:**
-  - `_ready()` –> Runs once upon entering the scene.
-  - `_process(delta)` –> Runs every frame for general logic.
-  - `_physics_process(delta)` –> Fixed updates for reliable physics.
-  
-- **Signals** –> Execute code in response to events:
- ```python title="file.gd"
-  func _on_body_entered(body):
-      queue_free()  # Removes node from scene
-  ```
+"Double quotes" and 'single quotes'
 
-### Node Referencing
-- **Direct Reference (shortcut):**
- ```python title="file.gd"
-  var player = $Player
-  ```
+## Blockquotes
 
-- **Unique Nodes (using `%`):** Reference easily regardless of position:
- ```python title="file.gd"
-  var manager = %GameManager
-  ```
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
 
-- **Autoload (Singleton):** Global scripts accessible everywhere:
- ```python title="file.gd"
-  GameManager.score += 1
-  ```
+## References
 
-### Audio
-- **AudioStreamPlayer2D** –> Plays audio in 2D space.
+An example containing a clickable reference[^1] with a link to the source.
 
-## What’s Next?
+Second example containing a reference[^2] with a link to the source.
 
-In the next sections, we’ll discuss:
+[^1]: Reference first footnote with a return to content link.
 
-👉 **[How to Program in Godot - GDScript Tutorial](#)**
+[^2]: Second reference with a link.
 
-Read the previous section:
+If you check out this example in `src/content/post/markdown-elements/index.md`, you'll notice that the references and the heading "Footnotes" are added to the bottom of the page via the [remark-rehype](https://github.com/remarkjs/remark-rehype#options) plugin.
 
-👉 [**What Are Game Engines?**](https://www.artecs.org/posts/game-engines-intro/)
+## Lists
 
-:::important
-Keep exploring, learning, and creating amazing games with Godot! 🚀
+Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    - Ac tristique libero volutpat at
+    - Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+- Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+4. You can use sequential numbers...
+5. ...or keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+1. bar
+
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+Block code "fences"
+
+```
+Sample text here...
+```
+
+Syntax highlighting
+
+```js
+var foo = function (bar) {
+	return bar++;
+};
+
+console.log(foo(5));
+```
+
+### Expressive code examples
+
+Adding a title
+
+```js title="file.js"
+console.log("Title example");
+```
+
+A bash terminal
+
+```bash
+echo "A base terminal example"
+```
+
+Highlighting code lines
+
+```js title="line-markers.js" del={2} ins={3-4} {6}
+function demo() {
+	console.log("this line is marked as deleted");
+	// This line and the next one are marked as inserted
+	console.log("this is the second inserted line");
+
+	return "this line uses the neutral default marker type";
+}
+```
+
+[Expressive Code](https://expressive-code.com/) can do a ton more than shown here, and includes a lot of [customisation](https://expressive-code.com/reference/configuration/).
+
+## Tables
+
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
+### Table Alignment
+
+| Item         | Price | # In stock |
+| ------------ | :---: | ---------: |
+| Juicy Apples | 1.99  |        739 |
+| Bananas      | 1.89  |          6 |
+
+### Keyboard elements
+
+| Action                | Shortcut                                   |
+| --------------------- | ------------------------------------------ |
+| Vertical split        | <kbd>Alt+Shift++</kbd>                     |
+| Horizontal split      | <kbd>Alt+Shift+-</kbd>                     |
+| Auto split            | <kbd>Alt+Shift+d</kbd>                     |
+| Switch between splits | <kbd>Alt</kbd> + arrow keys                |
+| Resizing a split      | <kbd>Alt+Shift</kbd> + arrow keys          |
+| Close a split         | <kbd>Ctrl+Shift+W</kbd>                    |
+| Maximize a pane       | <kbd>Ctrl+Shift+P</kbd> + Toggle pane zoom |
+
+## Images
+
+Image in the same folder: `src/content/post/markdown-elements/logo.png`
+
+![Astro theme cactus logo](./logo.png)
+
+## Links
+
+[Content from markdown-it](https://markdown-it.github.io/)
+
+## Admonitions
+
+What are admonitions? Admonitions (also known as “asides”) are useful for providing supportive and/or supplementary information related to your content.
+
+## How to use them
+
+To use admonitions in Astro Cactus, wrap your Markdown content in a pair of triple colons `:::`. The first pair should also include the type of admonition you want to use.
+
+For example, with the following Markdown:
+
+```md
+:::note
+Highlights information that users should take into account, even when skimming.
+:::
+```
+
+Outputs:
+
+:::note
+Highlights information that users should take into account, even when skimming.
 :::
 
-Post by: Gabriel Alonso
+## Admonition Types
+
+The following admonitions are currently supported:
+
+- `note`
+- `tip`
+- `important`
+- `warning`
+- `caution`
+
+### Note
+
+```md
+:::note
+Highlights information that users should take into account, even when skimming.
+:::
+```
+
+:::note
+Highlights information that users should take into account, even when skimming.
+:::
+
+### Tip
+
+```md
+:::tip
+Optional information to help a user be more successful.
+:::
+```
+
+:::tip
+Optional information to help a user be more successful.
+:::
+
+### Important
+
+```md
+:::important
+Crucial information necessary for users to succeed.
+:::
+```
+
+:::important
+Crucial information necessary for users to succeed.
+:::
+
+### Caution
+
+```md
+:::caution
+Negative potential consequences of an action.
+:::
+```
+
+:::caution
+Negative potential consequences of an action.
+:::
+
+### Warning
+
+```md
+:::warning
+Critical content demanding immediate user attention due to potential risks.
+:::
+```
+
+:::warning
+Critical content demanding immediate user attention due to potential risks.
+:::
+
+## Customising the admonition title
+
+You can customise the admonition title using the following markup:
+
+```md
+:::note[My custom title]
+This is a note with a custom title.
+:::
+```
+
+Outputs:
+
+:::note[My custom title]
+This is a note with a custom title.
+:::
