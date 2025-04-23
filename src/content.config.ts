@@ -52,4 +52,8 @@ const note = defineCollection({
 /* ──────────────────────────────────────────────────────────────
    Export collections
    ────────────────────────────────────────────────────────────── */
-export const collections = { learn, note };
+export const collections = {
+	learn,   // new name
+	post: learn, // alias for legacy code
+	note,
+};
