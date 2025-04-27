@@ -26,7 +26,7 @@ ogImage: "./logo.png"
 
 ## This is a 3D Interactive embedding (using Spline):
 <iframe 
-    src="https://my.spline.design/cieloglayersoftheearthnoninteractivecopycopy-TZS1qrzJecqRAK9lMkqeSXPg/" 
+    src="https://app.spline.design/community/file/14f45a7d-165f-40a9-9b34-2980ab631ce4" 
     width="100%" 
     height="500" 
     frameborder="0">
