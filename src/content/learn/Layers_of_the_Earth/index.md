@@ -5,17 +5,14 @@ description: "Discover the fascinating structure of Earth's interior."
 publishDate: "29 Apr 2025"
 topic: "Geology / Earth Science"
 tags: ["Earth", "Geology","Education"]
-coverImage:
-  src: "./logo.png"
-  alt: "Logo"
-ogImage: "./logo.png"
+
 ---
 
 ## What Are the Layers of the Earth?
 **The Earth is not a single solid ball — it is made up of multiple layers**, each with different materials, properties, and states of matter. These layers explain many natural phenomena, including volcanoes, earthquakes, and the magnetic field.
 
 <iframe 
-    src="https://quizlayersoftheearth-main-zmp6g6hsrmgn9yd7758tbh.streamlit.app?embed=true" 
+    src="https://my.spline.design/cieloglayersoftheearthnoninteractivecopycopy-TZS1qrzJecqRAK9lMkqeSXPg/" 
     width="100%" 
     height="500" 
     frameborder="0">
@@ -110,9 +107,9 @@ The mantle is not completely molten! It is mostly solid rock that flows very slo
 Test your knowledge with this quiz!
 
 <iframe 
-    src="https://editor.p5js.org/arthifact/full/uYnYvKU7r" 
+    src="https://quizlayersoftheearth-main-zmp6g6hsrmgn9yd7758tbh.streamlit.app?embed=true" 
     width="100%" 
-    height="600" 
+    height="750" 
     style="border: none; margin-top: 20px;"
     loading="lazy"
     allowfullscreen
