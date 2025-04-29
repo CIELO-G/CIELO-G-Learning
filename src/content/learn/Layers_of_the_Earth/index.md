@@ -109,7 +109,7 @@ Test your knowledge with this quiz!
 <iframe 
     src="https://quizlayersoftheearth-main-zmp6g6hsrmgn9yd7758tbh.streamlit.app?embed=true" 
     width="100%" 
-    height="750" 
+    height="850" 
     style="border: none; margin-top: 20px;"
     loading="lazy"
     allowfullscreen
